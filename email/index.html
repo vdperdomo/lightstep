@@ -22,11 +22,30 @@
       margin: 30px auto;
       max-width: 600px;
     }
-    header img {
+    header {
+      background-image: url("images/background.png");
+      position: relative;
       width: 100%;
+      max-height: 300px;
+      height: 50vw;
+    }
+    header .logo {
+      width: 70%;
+      left: 50%;
+      max-width: 380px;
+      position: absolute;
+      top: 10%;
+      transform: translate(-50%);
+    }
+    header .cover {
+      width: 80%;
+      left: 50%;
+      position: absolute;
+      top: 35%;
+      transform: translate(-50%);
     }
     main {
-      padding: 30px 0;
+      padding: 150px 0 30px;
     }
     .section {
       padding: 20px 30px;
@@ -38,6 +57,9 @@
     .feature-section {
       text-align: center;
       margin: 40px 0 0;
+    }
+    .feature-section img {
+      max-width: 60px;
     }
     .sign-up-btn {
       background: #6f5def;
@@ -60,7 +82,12 @@
 
   <body>
     <header>
-      <img src="images/header.png" alt="header" />
+      <img class="logo" src="images/logo.png" alt="lightstep logo" />
+      <img
+        class="cover"
+        src="images/header.png"
+        alt="incident response cover"
+      />
     </header>
     <main>
       <div class="section">
