@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Email</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <style>
+    body {
+      color: #1c1f42;
+      font-family: "Inter", sans-serif;
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 27px;
+      margin: 30px auto;
+      max-width: 600px;
+    }
+    header {
+      background-image: url("images/background.png");
+      position: relative;
+      width: 100%;
+      max-height: 350px;
+      height: 50vw;
+    }
+    header .logo {
+      width: 50%;
+      left: 50%;
+      max-width: 250px;
+      position: absolute;
+      top: 8%;
+      transform: translate(-50%);
+    }
+    header .cover {
+      width: 70%;
+      left: 50%;
+      position: absolute;
+      top: 55%;
+      transform: translate(-50%);
+    }
+    h1, h2 {
+      color: white;
+      text-align: center;
+      top: 75px;
+      position: relative;
+    }
+    h1 {
+      font-weight: 500;
+      font-size: 28px;
+      margin: 10px
+    }
+    h2 {
+      font-weight: 500;
+      font-size: 20px;
+      margin: 0;
+    }
+    main {
+      padding: 150px 0 30px;
+    }
+    a,
+    a:hover,
+    a:visited {
+      color: #6f5def;
+    }
+    .section {
+      padding: 20px 35px;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    .sign-up-btn {
+      background: #6f5def;
+      border: none;
+      display: block;
+      font-size: 16px;
+      font-weight: 300;
+      margin: 50px auto;
+      padding: 10px 25px;
+      width: fit-content;
+      text-decoration: none;
+    }
+    .sign-up-btn::after {
+      content: ">";
+      padding-left: 10px;
+    }
+    a.sign-up-btn {
+      color: white;
+    }
+    footer {
+      border-top: 1px solid #1c1f42;
+      font-size: 11px;
+      line-height: 20px;
+      padding-top: 10px;
+      text-align: center;
+    }
+  </style>
+
+  <body>
+    <header>
+      <img class="logo" src="images/logo.png" alt="lightstep logo" />
+      <h1>
+        Get Early Access to <br />
+        Lightstep Incident Response
+      </h1>
+      <h2>Free for 6 Months</h2>
+      <img
+        class="cover"
+        src="images/header.png"
+        alt="incident response cover"
+      />
+    </header>
+    <main>
+      <div class="section">
+        <p>Hi, {name},</p>
+        <p>
+          We’re excited to share that we’re offering you early access with
+          <a href="https://www.airapp.lightstep.com/signup" target="_blank" rel="noopener noreferrer">
+            6 months free</a
+          >
+          to Lightstep Incident Response. You and your teams deserve a modern
+          set of tools that are resilient, reliable, and connected – and that’s
+          why we’re excited to share that with our new incident response
+          solution. With our new incident response solution, you will:
+        </p>
+        <ul>
+          <li>Ensure 24/7 on-call coverage for every incident</li>
+          <li>Get complete, service context and insights across the org</li>
+          <li>
+            Save time and reduce toil by automating all your key processes
+          </li>
+        </ul>
+      </div>
+      <div class="section">
+        <p>
+          We’d appreciate your feedback on this early version of Lightstep
+          Incident Response.
+        </p>
+        <div>
+          <a
+            class="btn sign-up-btn"
+            href="https://www.airapp.lightstep.com/signup"
+            >Sign Up Now</a
+          >
+        </div>
+        <p>
+          Sincerely, <br />
+          The Lightstep Team
+        </p>
+      </div>
+    </main>
+    <footer>
+      <p>
+        The Lightstep Incident Response Team <br />
+        Powered by ServiceNow
+      </p>
+    </footer>
+  </body>
+</html>
